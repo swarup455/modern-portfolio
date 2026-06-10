@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Download, ChevronDown } from "lucide-react";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
@@ -17,7 +17,7 @@ const container = {
     },
 };
 
-const fadeUp = {
+const fadeUp: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
         opacity: 1,

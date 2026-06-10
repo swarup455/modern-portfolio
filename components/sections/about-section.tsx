@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { EducationCard } from "@/components/about/education-card";
@@ -121,7 +121,7 @@ const mindsetCards = [
 
 // ─── Animation Variants ───────────────────────────────────────────────────────
 
-const fadeUp = {
+const fadeUp: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: (delay = 0) => ({
         opacity: 1,
@@ -130,7 +130,7 @@ const fadeUp = {
     }),
 };
 
-const fadeDown = {
+const fadeDown: Variants = {
     hidden: { opacity: 0, y: -12 },
     visible: {
         opacity: 1,
