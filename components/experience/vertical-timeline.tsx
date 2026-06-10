@@ -15,7 +15,7 @@ export function VerticalTimeline({ entries }: VerticalTimelineProps) {
                 initial={{ scaleY: 0, opacity: 0 }}
                 whileInView={{ scaleY: 1, opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
+                transition={{ duration: 0.9, ease: "easeOut" }}
                 style={{ originY: 0 }}
                 className="
           absolute

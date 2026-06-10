@@ -82,7 +82,7 @@ const fadeDown = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.44, ease: [0.25, 0.1, 0.25, 1] as const },
+        transition: { duration: 0.44, ease: "easeOut" as const },
     },
 };
 
@@ -91,7 +91,7 @@ const fadeUp = {
     visible: (delay = 0) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.52, ease: [0.25, 0.1, 0.25, 1] as const, delay },
+        transition: { duration: 0.52, ease: "easeOut" as const, delay },
     }),
 };
 
@@ -100,7 +100,7 @@ const slideRight = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const, delay: 0.1 },
+        transition: { duration: 0.6, ease: "easeOut" as const, delay: 0.1 },
     },
 };
 

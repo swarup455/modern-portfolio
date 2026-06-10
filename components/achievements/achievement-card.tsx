@@ -41,7 +41,7 @@ export function AchievementCard({
             viewport={{ once: true }}
             transition={{
                 duration: 0.52,
-                ease: [0.25, 0.1, 0.25, 1] as const,
+                ease: "easeOut" as const,
                 delay: index * 0.07,
             }}
             whileHover={{ y: -4, transition: { duration: 0.2, ease: "easeOut" } }}

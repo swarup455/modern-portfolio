@@ -109,7 +109,7 @@ export function ContactForm() {
             <motion.div
                 initial={{ opacity: 0, scale: 0.97 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
                 className="flex flex-col items-center justify-center text-center gap-4 py-12 px-6"
             >
                 <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400">

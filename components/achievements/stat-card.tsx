@@ -17,7 +17,7 @@ export function StatCard({ value, label, sublabel, index }: StatCardProps) {
             viewport={{ once: true }}
             transition={{
                 duration: 0.45,
-                ease: [0.25, 0.1, 0.25, 1] as const,
+                ease: "easeOut" as const,
                 delay: 0.1 + index * 0.06,
             }}
             className="flex flex-col items-center justify-center text-center px-4 py-4 sm:py-0"
