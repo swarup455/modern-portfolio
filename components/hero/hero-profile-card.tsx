@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Download, Code2, Brain, MapPin, Briefcase } from "lucide-react";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ const cardVariants = {
         opacity: 1,
         x: 0,
         y: 0,
-        transition: { duration: 0.6, ease: "easeOut" },
+        transition: { duration: 0.6},
     },
 };
 
@@ -19,7 +19,7 @@ const itemVariants = {
     visible: (i: number) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.4, delay: i * 0.08, ease: "easeOut" },
+        transition: { duration: 0.4, delay: i * 0.08},
     }),
 };
 
