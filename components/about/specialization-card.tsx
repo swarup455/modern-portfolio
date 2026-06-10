@@ -23,7 +23,7 @@ export function SpecializationCard({
             viewport={{ once: true }}
             transition={{
                 duration: 0.5,
-                ease: [0.25, 0.1, 0.25, 1],
+                ease: "easeInOut",
                 delay: 0.1 + index * 0.08,
             }}
             whileHover={{ y: -2, transition: { duration: 0.2 } }}

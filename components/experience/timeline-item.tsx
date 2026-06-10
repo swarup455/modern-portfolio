@@ -47,7 +47,7 @@ export function TimelineItem({
                     initial={{ scale: 0, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1], delay: index * 0.08 + 0.15 }}
+                    transition={{ duration: 0.35, ease: "easeInOut", delay: index * 0.08 + 0.15 }}
                     className="w-[13px] h-[13px] rounded-full border-2 border-violet-400 bg-violet-500/25"
                 />
             </div>
@@ -60,7 +60,7 @@ export function TimelineItem({
                     initial={{ opacity: 0, x: isLeft ? -28 : 28 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: index * 0.08 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: index * 0.08 }}
                     className="w-[calc(50%-32px)] rounded-2xl border border-white/[0.06] bg-[#0d0d10] p-6 flex flex-col gap-4"
                 >
                     <CardContent role={role} badge={badge} org={org} period={period} location={location} bullets={bullets} tags={tags} />
@@ -72,7 +72,7 @@ export function TimelineItem({
                         initial={{ scale: 0, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1], delay: index * 0.08 + 0.15 }}
+                        transition={{ duration: 0.35, ease: "easeInOut", delay: index * 0.08 + 0.15 }}
                         className="w-[14px] h-[14px] rounded-full border-2 border-violet-400 bg-violet-500/25 z-10"
                     />
                 </div>
@@ -86,7 +86,7 @@ export function TimelineItem({
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: index * 0.08 }}
+                transition={{ duration: 0.5, ease: "easeInOut", delay: index * 0.08 }}
                 className="lg:hidden w-full pl-8 rounded-2xl border border-white/[0.06] bg-[#0d0d10] p-6 flex flex-col gap-4"
             >
                 <CardContent role={role} badge={badge} org={org} period={period} location={location} bullets={bullets} tags={tags} />

@@ -77,7 +77,7 @@ export function ExperienceSection() {
                         initial={{ opacity: 0, y: -12 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
+                        transition={{ duration: 0.45, ease: "easeInOut" }}
                         className="flex justify-center mb-5"
                     >
                         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-violet-500/25 bg-violet-500/8 text-violet-400 text-[11px] font-medium tracking-widest uppercase">
@@ -103,7 +103,7 @@ export function ExperienceSection() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.05 }}
+                        transition={{ duration: 0.55, ease: "easeInOut", delay: 0.05 }}
                         className="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4"
                     >
                         Experience &{" "}
@@ -115,7 +115,7 @@ export function ExperienceSection() {
                         initial={{ opacity: 0, y: 16 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: 0.12 }}
+                        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.12 }}
                         className="text-sm text-zinc-500 max-w-lg mx-auto leading-relaxed"
                     >
                         A chronological look at my professional evolution — from academic
@@ -131,7 +131,7 @@ export function ExperienceSection() {
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: 0.1 }}
                     className="mt-24 text-center"
                 >
                     <p className="text-sm text-zinc-500 mb-6">

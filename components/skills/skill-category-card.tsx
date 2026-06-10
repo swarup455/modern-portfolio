@@ -31,7 +31,7 @@ export function SkillCategoryCard({
             viewport={{ once: true }}
             transition={{
                 duration: 0.5,
-                ease: [0.25, 0.1, 0.25, 1],
+                ease: "easeInOut",
                 delay: index * 0.07,
             }}
             whileHover={{ y: -4, transition: { duration: 0.2 } }}
@@ -75,7 +75,7 @@ export function SkillCategoryCard({
                                 viewport={{ once: true }}
                                 transition={{
                                     duration: 0.8,
-                                    ease: [0.25, 0.1, 0.25, 1],
+                                    ease: "easeInOut",
                                     delay: index * 0.07 + i * 0.05 + 0.2,
                                 }}
                                 className="h-full rounded-full bg-gradient-to-r from-violet-600 to-violet-400"

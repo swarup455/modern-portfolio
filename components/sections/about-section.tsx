@@ -126,7 +126,7 @@ const fadeUp = {
     visible: (delay = 0) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay },
+        transition: { duration: 0.55, ease: "easeInOut", delay },
     }),
 };
 
@@ -135,7 +135,7 @@ const fadeDown = {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { duration: 0.45, ease: [0.25, 0.1, 0.25, 1] },
+        transition: { duration: 0.45, ease: "easeInOut" },
     },
 };
 
@@ -287,7 +287,7 @@ export function AboutSection() {
                             initial={{ opacity: 0, x: 32 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+                            transition={{ duration: 0.6, ease: "easeInOut" }}
                             className="relative w-full rounded-2xl overflow-hidden border border-white/[0.06] bg-zinc-900 aspect-[4/3]"
                         >
                             {/* Placeholder — replace src with your actual photo */}
@@ -319,7 +319,7 @@ export function AboutSection() {
                         initial={{ opacity: 0, y: 16 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
                         className="mb-10"
                     >
                         <h3 className="text-2xl font-semibold text-white mb-2">
@@ -350,7 +350,7 @@ export function AboutSection() {
                         initial={{ opacity: 0, y: 16 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
                         className="mb-10"
                     >
                         <h3 className="text-2xl font-semibold text-white mb-2">
@@ -380,7 +380,7 @@ export function AboutSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: 0.1 }}
                     className="mt-16 rounded-2xl border border-white/[0.06] bg-[#0d0d10] px-6 py-5"
                 >
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 divide-x divide-white/[0.04]">
@@ -405,7 +405,7 @@ export function AboutSection() {
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.05 }}
+                    transition={{ duration: 0.6, ease: "easeInOut", delay: 0.05 }}
                     className="mt-28 text-center"
                 >
                     <h3 className="text-2xl font-semibold text-white mb-8">

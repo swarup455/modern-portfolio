@@ -21,7 +21,7 @@ export function EducationCard({ entries }: EducationCardProps) {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeInOut", delay: 0.2 }}
             className="rounded-2xl border border-white/[0.06] bg-[#0d0d10] p-6 w-full"
         >
             {/* Card Header */}
@@ -59,7 +59,7 @@ export function EducationCard({ entries }: EducationCardProps) {
                             viewport={{ once: true }}
                             transition={{
                                 duration: 0.4,
-                                ease: [0.25, 0.1, 0.25, 1],
+                                ease: "easeInOut",
                                 delay: 0.3 + index * 0.12,
                             }}
                             className="relative pl-5"

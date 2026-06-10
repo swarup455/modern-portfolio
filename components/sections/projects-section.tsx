@@ -213,7 +213,7 @@ export function ProjectsSection() {
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.58, ease: [0.25, 0.1, 0.25, 1], delay: 0.08 }}
+                    transition={{ duration: 0.58, ease: "easeInOut", delay: 0.08 }}
                     className="mt-16 relative rounded-2xl border border-white/[0.07] bg-[#0d0d10] overflow-hidden"
                 >
                     {/* Inner glow */}

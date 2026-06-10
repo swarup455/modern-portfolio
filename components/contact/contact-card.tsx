@@ -13,7 +13,7 @@ export interface ContactCardProps {
 export function ContactCard({ label, value, href, icon, index }: ContactCardProps) {
     const inner = (
         <div className="flex items-center gap-3.5 w-full">
-            {/* Icon container */}
+            {/*Icon container */}
             <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-zinc-400 group-hover:border-violet-500/30 group-hover:text-violet-400 transition-all duration-200">
                 {icon}
             </div>
@@ -49,7 +49,7 @@ export function ContactCard({ label, value, href, icon, index }: ContactCardProp
             viewport={{ once: true }}
             transition={{
                 duration: 0.48,
-                ease: [0.25, 0.1, 0.25, 1],
+                ease: "easeInOut",
                 delay: index * 0.07,
             }}
         >

@@ -146,7 +146,7 @@ const fadeUp = {
     visible: (delay = 0) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const, delay },
+        transition: { duration: 0.5, ease: "easeInOut" as const, delay },
     }),
 };
 
@@ -253,7 +253,7 @@ export function SkillsSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: 0.1 }}
                     className="mt-16 rounded-2xl border border-white/[0.07] bg-[#0d0d10] p-6 lg:p-8 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-12"
                 >
                     {/* Left */}
@@ -298,7 +298,7 @@ export function SkillsSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.05 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: 0.05 }}
                     className="mt-16 text-center"
                 >
                     <p className="text-sm text-zinc-500 mb-5">Interested in seeing these skills in action?</p>

@@ -108,7 +108,7 @@ export function ProjectCard({
             viewport={{ once: true }}
             transition={{
                 duration: 0.52,
-                ease: [0.25, 0.1, 0.25, 1],
+                ease: "easeInOut",
                 delay: index * 0.08,
             }}
             whileHover={{ y: -5, transition: { duration: 0.22, ease: "easeOut" } }}

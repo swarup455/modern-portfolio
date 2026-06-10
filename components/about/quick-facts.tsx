@@ -23,7 +23,7 @@ export function QuickFactCard({
             viewport={{ once: true }}
             transition={{
                 duration: 0.5,
-                ease: [0.25, 0.1, 0.25, 1],
+                ease: "easeInOut",
                 delay: 0.1 + index * 0.1,
             }}
             className="rounded-2xl border border-white/[0.06] bg-[#0d0d10] p-6 flex flex-col items-center text-center gap-4"

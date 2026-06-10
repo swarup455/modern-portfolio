@@ -164,7 +164,7 @@ const fadeUp = {
     hidden: { opacity: 0, y: 16 },
     visible: (delay = 0) => ({
         opacity: 1, y: 0,
-        transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const, delay },
+        transition: { duration: 0.5, ease: "easeInOut" as const, delay },
     }),
 };
 
@@ -172,7 +172,7 @@ const fadeDown = {
     hidden: { opacity: 0, y: -10 },
     visible: {
         opacity: 1, y: 0,
-        transition: { duration: 0.44, ease: [0.25, 0.1, 0.25, 1] as const },
+        transition: { duration: 0.44, ease: "easeInOut" as const },
     },
 };
 
@@ -247,7 +247,7 @@ export function AchievementsSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.08 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: 0.08 }}
                     className="mb-12 rounded-2xl border border-white/[0.06] bg-[#0d0d10] px-4 py-5"
                 >
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 divide-y-[1px] sm:divide-y-0 sm:divide-x-0 lg:divide-x divide-white/[0.05]">
@@ -294,7 +294,7 @@ export function AchievementsSection() {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
+                        transition={{ duration: 0.55, ease: "easeInOut" }}
                         className="rounded-2xl border border-white/[0.07] bg-[#0d0d10] p-6"
                     >
                         {/* Header */}
@@ -333,7 +333,7 @@ export function AchievementsSection() {
                                             initial={{ width: 0 }}
                                             whileInView={{ width: `${row.pct}%` }}
                                             viewport={{ once: true }}
-                                            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 + i * 0.08 }}
+                                            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 + i * 0.08 }}
                                             className="h-full rounded-full bg-gradient-to-r from-violet-600 to-violet-400"
                                         />
                                     </div>
@@ -347,7 +347,7 @@ export function AchievementsSection() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.08 }}
+                        transition={{ duration: 0.55, ease: "easeInOut", delay: 0.08 }}
                         className="rounded-2xl border border-white/[0.07] bg-[#0d0d10] p-6 flex flex-col"
                     >
                         {/* Header */}
@@ -371,7 +371,7 @@ export function AchievementsSection() {
                                     initial={{ opacity: 0, y: 8 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1], delay: 0.15 + i * 0.07 }}
+                                    transition={{ duration: 0.4, ease: "easeInOut", delay: 0.15 + i * 0.07 }}
                                     className="group flex items-center justify-between p-3.5 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:border-emerald-500/25 hover:bg-emerald-500/[0.03] transition-all duration-200"
                                 >
                                     <div className="flex items-center gap-3">
@@ -414,7 +414,7 @@ export function AchievementsSection() {
                     initial={{ opacity: 0, y: 16 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: 0.05 }}
+                    transition={{ duration: 0.5, ease: "easeInOut", delay: 0.05 }}
                     className="mb-3"
                 >
                     <h3 className="text-[18px] font-semibold text-white mb-1">
@@ -432,7 +432,7 @@ export function AchievementsSection() {
                             initial={{ opacity: 0, y: 18 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1], delay: i * 0.08 }}
+                            transition={{ duration: 0.5, ease: "easeInOut", delay: i * 0.08 }}
                             whileHover={{ x: 3, transition: { duration: 0.18, ease: "easeOut" } }}
                             className="group flex items-start gap-4 rounded-2xl border border-white/[0.07] bg-[#0d0d10] p-5 hover:border-white/[0.11] transition-all duration-200"
                         >
@@ -470,7 +470,7 @@ export function AchievementsSection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.55, ease: [0.25, 0.1, 0.25, 1], delay: 0.05 }}
+                    transition={{ duration: 0.55, ease: "easeInOut", delay: 0.05 }}
                     className="mt-16 text-center"
                 >
                     <p className="text-sm text-zinc-500 mb-5">

@@ -158,7 +158,7 @@ export function CTASection() {
                                 viewport={{ once: true }}
                                 transition={{
                                     duration: 0.45,
-                                    ease: [0.25, 0.1, 0.25, 1],
+                                    ease: "easeInOut",
                                     delay: 0.25 + i * 0.06,
                                 }}
                                 className="flex flex-col items-center justify-center text-center px-4 py-3 sm:py-0"
