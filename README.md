@@ -137,15 +137,25 @@ modern-portfolio/
 
 ![About Section](./public/screenshots/about.png)
 
+### Experience Section
+> *Chronological professional timeline — Backend Internship at Graphura India and Summer Research at ISI Kolkata*
+
+![Experience Section](./public/screenshots/experience.png)
+
+### Skills Section
+> *Six-category skill grid with animated proficiency meters across Programming, Frontend, Backend, AI & ML, Tools, and CS Fundamentals*
+
+![Skills Section](./public/screenshots/skills.png)
+
 ### Projects Section
 > *Filterable project showcase with live demo badges and GitHub links*
 
 ![Projects Section](./public/screenshots/projects.png)
 
-### Contact Section
-> *Clean, accessible contact form with social links and availability status*
+### Achievements Section
+> *Competitive programming rankings, HackerRank certifications, academic honours, and professional impact metrics*
 
-![Contact Section](./public/screenshots/contact.png)
+![Achievements Section](./public/screenshots/achievements.png)
 
 ---
 
