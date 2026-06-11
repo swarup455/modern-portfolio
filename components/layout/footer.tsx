@@ -13,22 +13,22 @@ const navigation = [
 const socialLinks = [
     {
         name: "GitHub",
-        href: "https://github.com/",
+        href: "https://github.com/swarup455",
         icon: FaGithub,
     },
     {
         name: "LinkedIn",
-        href: "https://linkedin.com/",
+        href: "https://linkedin.com/in/swarupdas",
         icon: FaLinkedin,
     },
     {
         name: "YouTube",
-        href: "https://youtube.com/",
+        href: "https://www.youtube.com/@SWARUPDAS257",
         icon: FaYoutube,
     },
     {
         name: "Email",
-        href: "mailto:your@email.com",
+        href: "mailto:swarup82546@gmail.com",
         icon: Mail,
     },
 ];

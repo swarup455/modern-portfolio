@@ -44,15 +44,15 @@ export default function Navbar() {
 
                 {/* Right Actions */}
                 <div className="flex items-center justify-end gap-4">
-                    <a href="https://github.com/" target="_blank" rel="noreferrer"
+                    <a href="https://github.com/swarup455" target="_blank" rel="noreferrer"
                         className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 transition hover:border-violet-500/40 hover:text-violet-400">
                         <FaGithub size={16} />
                     </a>
-                    <a href="https://linkedin.com/" target="_blank" rel="noreferrer"
+                    <a href="https://www.linkedin.com/in/swarupdas1905/" target="_blank" rel="noreferrer"
                         className="flex h-9 w-9 items-center justify-center rounded-lg border border-zinc-800 text-zinc-400 transition hover:border-violet-500/40 hover:text-violet-400">
                         <FaLinkedin size={16} />
                     </a>
-                    <a href="/resume.pdf" target="_blank"
+                    <a href="/finalresume_swarup.pdf" target="_blank"
                         className="rounded-full bg-zinc-50 px-5 py-2.5 text-sm font-medium text-zinc-700 transition hover:bg-violet-500/20 hover:border-violet-400">
                         Resume
                     </a>

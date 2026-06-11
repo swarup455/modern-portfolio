@@ -14,20 +14,25 @@ const educationEntries = [
         years: "2022 — 2026",
         degree: "B.Tech in Computer Science & Engineering",
         institution: "Jalpaiguri Government Engineering College",
-        detail: "CGPA: 7.64 / 10 · Focused on Full-Stack Development, AI/ML, and Distributed Systems.",
-        tags: ["Full-Stack", "AI/ML", "DSA", "System Design"],
+        detail:
+            "CGPA: 7.64 / 10 · Focused on Software Engineering, Full-Stack Development, Backend Systems, and Data Structures & Algorithms.",
+        tags: ["MERN Stack", "Next.js", "Backend Development", "DSA"],
     },
     {
         years: "2020 — 2021",
-        degree: "Higher Secondary Education — Science",
-        institution: "Belrui N.G Institution",
-        tags: ["Physics", "Mathematics", "Chemistry"],
+        degree: "Higher Secondary Education (Science)",
+        institution: "Belrui N.G. Institution",
+        detail:
+            "77.8% (389/500) · Specialized in Physics, Chemistry, and Mathematics (PCM).",
+        tags: ["Physics", "Chemistry", "Mathematics"],
     },
     {
         years: "2018 — 2019",
         degree: "Secondary Education",
-        institution: "Belrui N.G Institution",
-        tags: ["Science", "Mathematics"],
+        institution: "Belrui N.G. Institution",
+        detail:
+            "80.4% (563/700) · Completed General Curriculum including Mathematics, Physical Science, Life Science, History, and Geography.",
+        tags: ["Mathematics", "Physical Science", "Life Science"],
     },
 ];
 
@@ -191,9 +196,9 @@ export function AboutSection() {
                                 custom={0.05}
                                 className="text-[42px] sm:text-5xl lg:text-[52px] font-bold leading-[1.08] tracking-tight text-white"
                             >
-                                I craft{" "}
-                                <em className="not-italic text-violet-400">scalable</em>{" "}
-                                systems that
+                                I build{" "}
+                                <em className="not-italic text-violet-400">modern</em>{" "}
+                                web applications
                             </motion.h2>
                             <motion.h2
                                 variants={fadeUp}
@@ -203,7 +208,7 @@ export function AboutSection() {
                                 custom={0.12}
                                 className="text-[42px] sm:text-5xl lg:text-[52px] font-bold leading-[1.08] tracking-tight text-white"
                             >
-                                create real-world impact.
+                                that solve real-world problems.
                             </motion.h2>
                         </div>
 
@@ -217,13 +222,10 @@ export function AboutSection() {
                             className="text-[15px] text-zinc-400 leading-relaxed max-w-[520px]"
                         >
                             I&apos;m a{" "}
-                            <span className="text-white font-medium">Software Engineer</span>{" "}
-                            and{" "}
-                            <span className="text-white font-medium">AI Enthusiast</span>{" "}
-                            passionate about building scalable digital products that solve
-                            real-world problems. I enjoy transforming ideas into reliable,
-                            high-performance software experiences through full-stack
-                            development, backend engineering, and AI-powered applications.
+                            <span className="text-white font-medium">Software Developer</span>{" "}
+                            with experience in{" "}
+                            <span className="text-white font-medium">MERN Stack and Next.js Development</span>.
+                            I&apos;ve built real-time collaboration platforms, AI-powered applications, and scalable backend systems using Node.js, Express.js, MongoDB, React, and TypeScript. I&apos;m passionate about turning ideas into impactful digital products while continuously improving my engineering and problem-solving skills.
                         </motion.p>
 
                         <motion.p
@@ -234,11 +236,7 @@ export function AboutSection() {
                             custom={0.28}
                             className="text-[15px] text-zinc-400 leading-relaxed max-w-[520px]"
                         >
-                            My work focuses on creating maintainable systems, designing robust
-                            APIs, developing real-time applications, and integrating modern AI
-                            technologies to deliver impactful solutions. I believe great
-                            software is built through strong problem-solving skills, clean
-                            architecture, and continuous learning.
+                            My experience includes building REST APIs, real-time collaborative applications, and AI-powered platforms using modern technologies such as Node.js, Express.js, MongoDB, React, and Next.js. I enjoy solving complex problems, writing clean and maintainable code, and continuously learning new technologies to create impactful software solutions.
                         </motion.p>
 
                         {/* CTAs */}
@@ -436,7 +434,7 @@ export function AboutSection() {
                                 variant="outline"
                                 className="rounded-full border-white/15 bg-transparent hover:bg-white/5 text-white text-sm px-6 py-2 h-auto font-medium transition-colors duration-200"
                             >
-                                <a href="/resume" target="_blank" rel="noreferrer">
+                                <a href="/finalresume_swarup.pdf" target="_blank" rel="noreferrer">
                                     Resume
                                 </a>
                             </Button>

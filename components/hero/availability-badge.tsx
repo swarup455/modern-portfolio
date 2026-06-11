@@ -16,7 +16,7 @@ export function AvailabilityBadge() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-500" />
             </span>
             <span className="text-sm text-violet-300">
-                Available for new opportunities
+                Available for Full-Time Opportunities
             </span>
         </motion.div>
     );

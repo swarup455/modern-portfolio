@@ -34,18 +34,18 @@ const experiences = [
         tags: ["Quantum Computing", "Research", "Algorithms", "Mathematics"],
     },
     {
-        role: "Open Source Contributor",
-        badge: { label: "Professional", variant: "professional" as const },
-        org: "Various AI & Developer Toolkits",
-        period: "2022 — Present",
-        location: "GitHub",
+        role: "Personal Projects",
+        badge: { label: "Projects", variant: "professional" as const },
+        org: "Independent Development",
+        period: "2023 — Present",
+        location: "Remote",
         bullets: [
-            "Contributed bug fixes, documentation improvements, and feature enhancements to open-source developer tools and AI libraries.",
-            "Built and maintained reusable utility components and hooks for React-based applications.",
-            "Participated in code reviews and architectural discussions within developer communities.",
-            "Consistently maintained a LeetCode rating of 1700+ with 450+ problems solved, demonstrating strong DSA foundations.",
+            "Built INTERVO, an AI-powered mock interview platform using Next.js, TypeScript, Vapi AI, and Groq LLM for real-time voice-based interview simulations.",
+            "Developed STUDYBUDDY, a real-time collaborative workspace featuring shared channels, live chat, and multi-user document editing with Socket.IO and Yjs.",
+            "Created NEWSDESK, an AI-powered news aggregation platform with article categorization, full-text search, and AI-generated summaries.",
+            "Designed and deployed multiple full-stack applications, gaining hands-on experience with React, Next.js, Node.js, Express.js, MongoDB, Firebase, and REST APIs.",
         ],
-        tags: ["TypeScript", "React", "GitHub Actions", "DSA", "Documentation"],
+        tags: ["Next.js", "React", "Node.js", "MongoDB", "TypeScript"],
     },
 ];
 
@@ -143,7 +143,7 @@ export function ExperienceSection() {
                     </p>
                     <div className="flex flex-wrap gap-3 justify-center">
                         <a
-                            href="/resume.pdf"
+                            href="/finalresume_swarup.pdf"
                             target="_blank"
                             rel="noreferrer"
                             className="inline-flex items-center gap-2 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm px-6 py-2.5 font-medium transition-colors duration-200"

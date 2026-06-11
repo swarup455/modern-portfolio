@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { FaGithub as Github } from "react-icons/fa";
 
-export type ProjectCategory = "AI & ML" | "Web Apps" | "Core Tools";
+export type ProjectCategory = "AI & ML" | "Web Apps" | "Core Tools" | "Blockchain" | "Backend API";
 
 export interface ProjectCardProps {
     title: string;
@@ -24,12 +24,16 @@ const categoryColors: Record<ProjectCategory, string> = {
     "AI & ML": "bg-violet-500/15 text-violet-300 border-violet-500/25",
     "Web Apps": "bg-sky-500/15 text-sky-300 border-sky-500/25",
     "Core Tools": "bg-emerald-500/15 text-emerald-300 border-emerald-500/25",
+    "Backend API": "bg-amber-500/15 text-amber-300 border-amber-500/25",
+    "Blockchain": "bg-fuchsia-500/15 text-fuchsia-300 border-fuchsia-500/25",
 };
 
 const categoryDotColors: Record<ProjectCategory, string> = {
     "AI & ML": "bg-violet-400",
     "Web Apps": "bg-sky-400",
     "Core Tools": "bg-emerald-400",
+    "Backend API": "bg-amber-400",
+    "Blockchain": "bg-fuchsia-400",
 };
 
 /** Deterministic placeholder gradient per index so cards look distinct */

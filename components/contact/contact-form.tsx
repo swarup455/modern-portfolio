@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
@@ -51,8 +52,8 @@ function InputField({
             </label>
             <div
                 className={`relative flex items-center rounded-xl border transition-all duration-200 bg-white/[0.03] ${focused
-                        ? "border-violet-500/50 shadow-[0_0_0_3px_rgba(124,58,237,0.1)]"
-                        : "border-white/[0.08] hover:border-white/15"
+                    ? "border-violet-500/50 shadow-[0_0_0_3px_rgba(124,58,237,0.1)]"
+                    : "border-white/[0.08] hover:border-white/15"
                     }`}
             >
                 <span className="absolute left-3 text-zinc-600 pointer-events-none">
@@ -87,17 +88,30 @@ export function ContactForm() {
 
     const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
+
         if (!formData.name || !formData.email || !formData.message) return;
 
         setFormState("loading");
 
-        // Simulate async send — replace with your API call (e.g. Resend, EmailJS, etc.)
-        await new Promise((r) => setTimeout(r, 1600));
+        try {
+            await emailjs.send(
+                "service_7nkoeuc",
+                "template_yfwncoe",
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    subject: formData.subject || "Portfolio Contact Form",
+                    message: formData.message,
+                },
+                "5JP-RBdM0XfSRCHem"
+            );
 
-        // Swap with: const res = await fetch("/api/contact", { method: "POST", body: JSON.stringify(formData) })
-        setFormState("success");
+            setFormState("success");
+        } catch (error) {
+            console.error("EmailJS Error:", error);
+            setFormState("error");
+        }
     };
-
     const handleReset = () => {
         setFormData(initialData);
         setFormState("idle");
@@ -188,8 +202,8 @@ export function ContactForm() {
                 </label>
                 <div
                     className={`relative rounded-xl border transition-all duration-200 bg-white/[0.03] ${focused
-                            ? "border-violet-500/50 shadow-[0_0_0_3px_rgba(124,58,237,0.1)]"
-                            : "border-white/[0.08] hover:border-white/15"
+                        ? "border-violet-500/50 shadow-[0_0_0_3px_rgba(124,58,237,0.1)]"
+                        : "border-white/[0.08] hover:border-white/15"
                         }`}
                 >
                     <svg

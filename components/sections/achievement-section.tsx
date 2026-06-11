@@ -132,7 +132,7 @@ const honorRows = [
     },
     {
         icon: <IconProject />,
-        title: "AI-Powered Products — 3 Full-Stack Projects",
+        title: "AI-Powered Products — 5+ Full-Stack Projects",
         org: "Personal Portfolio",
         year: "2023–24",
         description: "Built INTERVO (AI interview simulator), StudyBuddy (real-time collaboration), and NewsDesk (AI news aggregation) end-to-end.",

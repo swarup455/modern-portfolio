@@ -10,7 +10,7 @@ const cardVariants = {
         opacity: 1,
         x: 0,
         y: 0,
-        transition: { duration: 0.6},
+        transition: { duration: 0.6 },
     },
 };
 
@@ -19,7 +19,7 @@ const itemVariants = {
     visible: (i: number) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.4, delay: i * 0.08},
+        transition: { duration: 0.4, delay: i * 0.08 },
     }),
 };
 
@@ -58,8 +58,8 @@ export function HeroProfileCard() {
                 <div>
                     <p className="font-semibold text-white">Swarup Das</p>
                     <p className="text-sm text-zinc-400">
-                        Software Engineer{" "}
-                        <span className="text-zinc-600">•</span> AI Enthusiast
+                        Backend Developer{" "}
+                        <span className="text-zinc-600">•</span> CS Undergraduate
                     </p>
                 </div>
             </motion.div>
@@ -80,10 +80,10 @@ export function HeroProfileCard() {
                 </div>
                 <div>
                     <p className="text-sm font-medium text-white">
-                        Backend Expertise
+                        Backend Development
                     </p>
                     <p className="mt-0.5 text-xs text-zinc-500">
-                        Node.js, Go, Python, Distributed Systems
+                        Node.js, Express.js, MongoDB, REST APIs
                     </p>
                 </div>
             </motion.div>
@@ -101,10 +101,10 @@ export function HeroProfileCard() {
                 </div>
                 <div>
                     <p className="text-sm font-medium text-white">
-                        AI &amp; ML Research
+                        Full Stack Development
                     </p>
                     <p className="mt-0.5 text-xs text-zinc-500">
-                        LLMs, Neural Networks, PyTorch
+                        React.js, Next.js, TypeScript
                     </p>
                 </div>
             </motion.div>
@@ -119,7 +119,7 @@ export function HeroProfileCard() {
             >
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs text-zinc-400">
                     <MapPin size={10} className="text-zinc-500" />
-                    Kolkata, IN
+                    Asansol, IN
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-3 py-1 text-xs text-emerald-400">
                     <Briefcase size={10} />
@@ -136,13 +136,13 @@ export function HeroProfileCard() {
                 variants={itemVariants}
                 initial="hidden"
                 animate="visible"
-                href="/resume.pdf"
+                href="/finalresume_swarup.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="flex w-full items-center justify-center gap-2 rounded-xl bg-violet-600 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:bg-violet-500 hover:shadow-[0_0_20px_rgba(124,58,237,0.4)]"
             >
                 <Download size={14} />
-                Preview Resume
+                View Resume
             </motion.a>
         </motion.div>
     );

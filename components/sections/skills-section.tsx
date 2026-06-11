@@ -132,11 +132,11 @@ const categories: (Omit<SkillCategoryCardProps, "index"> & { filter: FilterKey[]
 ];
 
 const nextGenTags = [
-    "Rust Programming",
-    "WebAssembly",
-    "Edge AI Optimization",
-    "Vector Databases",
-    "Agent Workflows",
+    "Next.js",
+    "TypeScript",
+    "Docker",
+    "Redis Caching",
+    "AI Agent Workflows",
 ];
 
 // ─── Animation Variants ───────────────────────────────────────────────────────
@@ -225,8 +225,8 @@ export function SkillsSection() {
                             key={f.key}
                             onClick={() => setActiveFilter(f.key)}
                             className={`flex-shrink-0 px-4 py-1.5 rounded-full text-[12px] font-medium transition-all duration-200 ${activeFilter === f.key
-                                    ? "bg-white text-black"
-                                    : "text-zinc-400 border border-white/[0.08] hover:text-white hover:border-white/20"
+                                ? "bg-white text-black"
+                                : "text-zinc-400 border border-white/[0.08] hover:text-white hover:border-white/20"
                                 }`}
                         >
                             {f.label}
@@ -268,8 +268,8 @@ export function SkillsSection() {
                         </div>
                         <h3 className="text-xl font-semibold text-white mb-2">Next-Gen Technologies</h3>
                         <p className="text-[13px] text-zinc-500 leading-relaxed max-w-md">
-                            Deepening knowledge in distributed systems at scale and exploring the
-                            intersection of generative AI with edge computing.
+                            Passionate about building impactful software products with MERN Stack, Next.js,
+                            and AI technologies while strengthening problem-solving skills through competitive programming.
                         </p>
                         <div className="flex flex-wrap gap-2 mt-4">
                             {nextGenTags.map((tag) => (

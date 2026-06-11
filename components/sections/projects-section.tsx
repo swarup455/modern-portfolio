@@ -27,7 +27,7 @@ const projects: Project[] = [
             "Real-time AI interview simulator with voice interaction, adaptive follow-up questions, and instant performance feedback powered by Groq LLM and Vapi AI.",
         category: "AI & ML",
         tags: ["Next.js", "TypeScript", "Groq LLM", "Vapi AI", "MongoDB", "Tailwind CSS"],
-        githubUrl: "https://github.com/swarupdas",
+        githubUrl: "https://github.com/swarup455/Intervo",
         liveUrl: "https://intervo.vercel.app",
         caseStudyUrl: "#",
     },
@@ -37,7 +37,7 @@ const projects: Project[] = [
             "Collaborative study platform with live document editing, real-time cursors, shared whiteboards, and AI-assisted note summarization for students and teams.",
         category: "Web Apps",
         tags: ["React.js", "Node.js", "Socket.io", "MongoDB", "Express.js", "Redux Toolkit"],
-        githubUrl: "https://github.com/swarupdas",
+        githubUrl: "https://github.com/swarup455/StudyBuddy",
         liveUrl: "https://studybuddy.vercel.app",
         caseStudyUrl: "#",
     },
@@ -47,8 +47,44 @@ const projects: Project[] = [
             "Intelligent news aggregation platform that clusters articles by topic, generates AI-powered summaries, and delivers a personalised feed with sentiment analysis.",
         category: "AI & ML",
         tags: ["Next.js", "TypeScript", "Groq LLM", "REST APIs", "Tailwind CSS", "Firebase"],
-        githubUrl: "https://github.com/swarupdas",
+        githubUrl: "https://github.com/swarup455/Newsdesk",
         liveUrl: "https://newsdesk.vercel.app",
+        caseStudyUrl: "#",
+    },
+    {
+        title: "SupplyChain – Blockchain-Based Supply Chain Tracking",
+        description:
+            "Developed a multi-role supply chain management platform for tracking wooden furniture products across suppliers, manufacturers, distributors, retailers, and customers. Built responsive React dashboards, authentication workflows, and blockchain-integrated product verification using QR codes.",
+        category: "Blockchain",
+        tags: [
+            "React.js",
+            "Node.js",
+            "MongoDB",
+            "Authentication",
+            "Ethereum",
+            "MetaMask",
+            "Blockchain"
+        ],
+        githubUrl: "https://github.com/swarup455/SupplyChain-BlockChain",
+        liveUrl: "",
+        caseStudyUrl: "#",
+    },
+    {
+        title: "Job Tracker API",
+        description:
+            "Production-grade REST API for job application tracking with JWT authentication, application lifecycle management, Redis caching, and automated email reminder workflows. Built using TypeScript and containerized with Docker for scalable deployment.",
+        category: "Backend API",
+        tags: [
+            "Node.js",
+            "TypeScript",
+            "Express.js",
+            "MongoDB",
+            "Redis",
+            "Docker",
+            "JWT"
+        ],
+        githubUrl: "https://github.com/swarup455/Job-Tracker-API",
+        liveUrl: "",
         caseStudyUrl: "#",
     },
 ];
@@ -153,8 +189,8 @@ export function ProjectsSection() {
                             key={f}
                             onClick={() => setActiveFilter(f)}
                             className={`flex-shrink-0 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[12px] font-medium transition-all duration-200 cursor-pointer ${activeFilter === f
-                                    ? "bg-violet-600 text-white shadow-[0_0_20px_rgba(124,58,237,0.35)]"
-                                    : "text-zinc-400 border border-white/[0.08] hover:text-white hover:border-white/20"
+                                ? "bg-violet-600 text-white shadow-[0_0_20px_rgba(124,58,237,0.35)]"
+                                : "text-zinc-400 border border-white/[0.08] hover:text-white hover:border-white/20"
                                 }`}
                         >
                             {f === "All Projects" && (
